@@ -1,0 +1,149 @@
+.skills-section {
+  padding: 5rem 2rem;
+  background: #f8f9fa;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: palevioletred;
+  font-size: 2.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.skill-category {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(219, 112, 147, 0.15);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+  color: palevioletred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(219, 112, 147, 0.1);
+  border-radius: 50%;
+}
+
+.category-header h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  flex: 1;
+  align-content: flex-start;
+}
+
+.skill-tag {
+  background: palevioletred;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  border: 2px solid palevioletred;
+}
+
+.skill-tag:hover {
+  background: white;
+  color: palevioletred;
+  transform: translateY(-2px);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 3rem 1rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .skill-category {
+    padding: 1.5rem;
+  }
+  
+  .category-header {
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .category-icon {
+    font-size: 1.3rem;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .category-header h3 {
+    font-size: 1.2rem;
+  }
+  
+  .skills-list {
+    gap: 0.6rem;
+  }
+  
+  .skill-tag {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+  
+
+}
+
+@media (max-width: 480px) {
+  .skills-section h2 {
+    font-size: 2rem;
+  }
+  
+  .skill-category {
+    padding: 1.2rem;
+  }
+  
+  .skills-list {
+    justify-content: center;
+  }
+}

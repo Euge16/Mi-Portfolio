@@ -1,0 +1,55 @@
+.experience-section {
+  padding: 3rem 0;
+}
+
+.experience-section h2 {
+  color: palevioletred;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.experiences-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-item {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 4px solid palevioletred;
+}
+
+.experience-item h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.period {
+  color: #666;
+  font-style: italic;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.experience-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-item li {
+  padding: 0.5rem 0;
+  color: #555;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.experience-item li:before {
+  content: "▸";
+  color: palevioletred;
+  position: absolute;
+  left: 0;
+}
