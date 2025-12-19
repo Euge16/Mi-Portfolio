@@ -34,6 +34,11 @@
   line-height: 1.7;
   color: #555;
   font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -43,5 +48,13 @@
   
   .about-section h1 {
     font-size: 2rem;
+  }
+  
+  .about-content {
+    padding: 1.5rem;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
   }
 }
