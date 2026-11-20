@@ -12,11 +12,9 @@ import {
   FaLaptopCode,
   FaBriefcase,
   FaAddressCard,
-  FaReact,
-  FaNodeJs,
-  FaDatabase,
+  FaDocker,
 } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
+import { SiNestjs, SiTypescript, SiMysql } from "react-icons/si";
 
 function App() {
   return (
@@ -58,19 +56,19 @@ function App() {
       {/* Hero Section */}
       <section id="inicio" className="hero">
         <div className="hero-content">
-          <h1>Desarrolladora Full Stack</h1>
+          <h1>Desarrolladora Backend & Analista Funcional</h1>
           <div className="tech-stack">
             <span className="tech-item">
-              <FaReact className="tech-icon" /> React
-            </span>
-            <span className="tech-item">
-              <FaNodeJs className="tech-icon" /> Node.js
-            </span>
-            <span className="tech-item">
-              <FaDatabase className="tech-icon" /> MongoDB
+              <SiNestjs className="tech-icon" /> NestJS
             </span>
             <span className="tech-item">
               <SiTypescript className="tech-icon" /> TypeScript
+            </span>
+            <span className="tech-item">
+              <SiMysql className="tech-icon" /> MySQL
+            </span>
+            <span className="tech-item">
+              <FaDocker className="tech-icon" /> Docker
             </span>
           </div>
           <a href="#proyectos" className="cta-button">
@@ -86,7 +84,7 @@ function App() {
       <Skills />
       <Experience />
 
-      {/* Footer simplificado */}
+      {/* Footer */}
       <footer id="contacto" className="footer">
         <div className="footer-container">
           <div className="footer-content">
@@ -101,7 +99,7 @@ function App() {
                   lop.mariaeugenia@gmail.com
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/maría-eugenia-lópez-a8769521b"
+                  href="https://www.linkedin.com/in/mariaeugenialopez-it/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact-link"
@@ -142,7 +140,7 @@ function App() {
 
           <div className="footer-bottom">
             <p>
-              &copy; 2024 María Eugenia López. Todos los derechos reservados.
+              &copy; 2026 María Eugenia López. Todos los derechos reservados.
             </p>
           </div>
         </div>

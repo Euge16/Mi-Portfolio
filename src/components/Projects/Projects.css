@@ -1,57 +1,56 @@
 .projects-section {
   padding: 5rem 2rem;
-  background-color: #f8f9fa;
+  background-color: var(--bg-main);
 }
 
 .projects-section h2 {
   text-align: center;
   margin-bottom: 3rem;
-  color: palevioletred;
-  font-size: 2.5rem;
+  color: var(--green-dark);
+  font-size: 2.2rem;
+  letter-spacing: -0.5px;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
 .project-card {
-  background: white;
-  border-radius: 15px;
+  background: var(--bg-card);
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  border: 1px solid #e9ecef;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 4px 16px rgba(20, 54, 39, 0.05);
+  transition: transform 0.25s, box-shadow 0.25s;
   display: flex;
   flex-direction: column;
-  min-height: 550px;
-  height: auto;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(219, 112, 147, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(20, 54, 39, 0.1);
 }
 
 .project-header {
-  background: linear-gradient(135deg, palevioletred, #d87093);
+  background: var(--green-pastel);
   padding: 1.5rem;
-  color: white;
-  flex-shrink: 0;
+  border-bottom: 1px solid var(--border-soft);
+  min-height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-header h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.3rem;
-  line-height: 1.3;
-  min-height: 3.2em;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  color: var(--green-dark);
+  font-weight: 700;
 }
 
 .project-meta {
@@ -63,16 +62,19 @@
 }
 
 .project-period {
-  font-size: 0.9rem;
-  opacity: 0.9;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
 }
 
 .project-role {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 4px 8px;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  font-weight: 500;
+  background: var(--bg-card);
+  color: var(--green-accent);
+  border: 1px solid var(--green-soft);
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
 }
 
 .project-content {
@@ -80,25 +82,20 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .project-description {
-  color: #666;
+  color: var(--text-muted);
   line-height: 1.6;
-  font-style: italic;
+  font-size: 0.95rem;
   margin: 0;
 }
 
-.project-features {
-  flex: 1;
-  min-height: 150px;
-}
-
 .project-features h4 {
-  color: #333;
-  margin-bottom: 0.8rem;
-  font-size: 1rem;
+  color: var(--green-dark);
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
   font-weight: 600;
 }
 
@@ -106,27 +103,19 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  max-height: 200px;
-  overflow-y: auto;
 }
 
 .project-features li {
-  padding: 0.5rem 0;
-  color: #555;
+  padding: 0.35rem 0 0.35rem 1.2rem;
+  color: var(--text-muted);
   position: relative;
-  padding-left: 1.2rem;
-  line-height: 1.4;
+  line-height: 1.45;
   font-size: 0.9rem;
-  border-bottom: 1px solid #f0f0f0;
 }
 
-.project-features li:last-child {
-  border-bottom: none;
-}
-
-.project-features li:before {
+.project-features li::before {
   content: "▸";
-  color: palevioletred;
+  color: var(--green-accent);
   position: absolute;
   left: 0;
 }
@@ -134,122 +123,57 @@
 .technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 0;
+  gap: 0.45rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
 }
 
 .tech-tag {
-  background: palevioletred;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 15px;
+  background: var(--green-pastel);
+  color: var(--green-dark);
+  padding: 5px 11px;
+  border-radius: 8px;
   font-size: 0.8rem;
-  font-weight: 500;
-  flex-shrink: 0;
+  font-weight: 600;
 }
 
 .project-links {
   display: flex;
-  gap: 1rem;
+  gap: 0.8rem;
   flex-wrap: wrap;
-  margin-top: auto;
   padding-top: 1rem;
-  border-top: 1px solid #e9ecef; 
+  border-top: 1px solid var(--border-soft);
 }
 
 .github-link {
-  background: palevioletred;
-  color: white;
-  padding: 10px 20px;
+  background: var(--green-accent);
+  color: #ffffff;
+  padding: 9px 18px;
   text-decoration: none;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: all 0.3s;
-  border: 2px solid palevioletred;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.25s;
   flex: 1;
   text-align: center;
   min-width: 120px;
 }
 
 .github-link:hover {
-  background: white;
-  color: palevioletred;
-  transform: translateY(-2px);
+  background: var(--green-hover);
+  transform: translateY(-1px);
 }
 
-/* Scroll personalizado */
-.project-features ul::-webkit-scrollbar {
-  width: 6px;
-}
-
-.project-features ul::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-.project-features ul::-webkit-scrollbar-thumb {
-  background: palevioletred;
-  border-radius: 10px;
-}
-
-.project-features ul::-webkit-scrollbar-thumb:hover {
-  background: #d87093;
-}
-
-/* Responsive */
 @media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .project-card {
-    min-height: 500px;
-    height: auto;
-  }
-  
-  .project-header h3 {
-    min-height: auto;
-    -webkit-line-clamp: 3;
-  }
-  
-  .project-features ul {
-    max-height: 150px;
-  }
-  
-  .project-meta {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .project-links {
-    flex-direction: column;
-  }
-  
-  .github-link {
-    min-width: auto;
-  }
-}
-
-@media (max-width: 480px) {
   .projects-section {
-    padding: 3rem 1rem;
+    padding: 3.5rem 1.2rem;
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
-  .project-card {
+
+  .project-header {
     min-height: auto;
-  }
-  
-  .project-content {
-    padding: 1rem;
-    gap: 0.8rem;
-  }
-  
-  .project-features ul {
-    max-height: 120px;
   }
 }

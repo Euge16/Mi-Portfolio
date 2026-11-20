@@ -3,12 +3,13 @@ import "./Experience.css";
 const Experience = () => {
   const experiences = [
     {
-      title: "Desarrolladora Trainee, Vortex (Remoto)",
-      period: "Jul. 2025 - sept. 2025",
+      title: "Trainee Mobile - Programa Akademi | Vortex (Remoto)",
+      period: "Mar. 2025 - Sept. 2025",
       responsibilities: [
-        "Maquetación y desarrollo de componentes en React Native a partir de diseños en Figma",
-        "Implementación de lógica front-end para la interactividad de las pantallas",
-        "Control de versiones y colaboración en equipo utilizando GitLab",
+        "Programa intensivo que combinó formación en desarrollo Full Stack con una práctica profesionalizadora de tres meses como Trainee Mobile.",
+        "Maqueté e implementé lógica de interfaz para componentes móviles en React Native a partir de diseños en Figma.",
+        "Conecté componentes de interfaz con la lógica de negocio y participé en el consumo de servicios.",
+        "Trabajé con GitLab, control de versiones y manejo de ramas en un entorno colaborativo bajo Scrum.",
       ],
     },
   ];
