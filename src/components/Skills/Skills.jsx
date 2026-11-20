@@ -1,44 +1,65 @@
 import "./Skills.css";
-import { FaDatabase, FaTools, FaProjectDiagram, FaCode } from "react-icons/fa";
+import {
+  FaDatabase,
+  FaTools,
+  FaServer,
+  FaCode,
+  FaShieldAlt,
+  FaClipboardList,
+} from "react-icons/fa";
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Lenguajes",
-      icon: <FaCode />,
-      skills: ["JavaScript", "TypeScript", "Java", "C", "C++"],
-    },
-    {
-      title: "Frontend",
-      icon: <FaProjectDiagram />,
-      skills: ["ReactJS", "HTML", "CSS"],
-    },
-    {
-      title: "Backend",
-      icon: <FaProjectDiagram />,
-      skills: ["Node.js", "Express.js", "Spring Boot"],
+      title: "Backend y Lenguajes",
+      icon: <FaServer />,
+      skills: [
+        "NestJS",
+        "Node.js",
+        "Express.js",
+        "TypeScript",
+        "JavaScript",
+        "Java",
+        "C#",
+      ],
     },
     {
       title: "Bases de Datos",
       icon: <FaDatabase />,
-      skills: ["MongoDB", "MySQL"],
+      skills: ["MySQL", "SQL", "TypeORM", "Modelado Relacional", "MongoDB"],
+    },
+    {
+      title: "APIs y Seguridad",
+      icon: <FaShieldAlt />,
+      skills: ["REST", "JWT", "RBAC", "Swagger", "SOAP", "gRPC", "WebSockets"],
+    },
+    {
+      title: "Análisis Funcional",
+      icon: <FaClipboardList />,
+      skills: [
+        "Relevamiento de procesos",
+        "Reglas de negocio",
+        "Requerimientos",
+        "Casos de uso",
+        "Scrum",
+      ],
     },
     {
       title: "Herramientas",
       icon: <FaTools />,
-      skills: ["Git", "GitHub", "GitLab", "Trello"],
+      skills: ["Docker", "Postman", "Git", "GitHub", "GitLab", "Trello"],
     },
     {
-      title: "Metodologías",
-      icon: <FaProjectDiagram />,
-      skills: ["Scrum", "Agile", "Lean Inception", "User Stories"],
+      title: "Frontend Complementario",
+      icon: <FaCode />,
+      skills: ["React", "React Native", "HTML", "CSS"],
     },
   ];
 
   return (
     <section id="habilidades" className="skills-section">
       <div className="skills-container">
-        <h2>Habilidades Técnicas</h2>
+        <h2>Habilidades</h2>
         <div className="skills-grid">
           {skillCategories.map((category, index) => (
             <div key={index} className="skill-category">
